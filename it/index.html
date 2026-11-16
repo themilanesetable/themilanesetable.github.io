@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>The Milanese Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trattorie, risotti, cotolette e lunghi aperitivi. Una lista breve, aggiornata ogni volta che mangio in un posto che vale la pena raccontare.">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Jost:wght@300..700&amp;display=swap">
+<style>
+body{margin:0;background:#16302A}
+a{color:#EBB0AA}a:hover{color:#F6D3CF}
+.pattern-layer{background-image:url(../images/699789cfbedba8ec0cc2aa8d9bd2c28d.svg);background-size:320px 180px;background-repeat:repeat}
+
+.lang-toggle a{transition:opacity .15s ease}.lang-toggle a:hover,.lang-toggle a:focus-visible{opacity:1 !important}
+@media (max-width: 720px){.lang-toggle{position:absolute;top:18px;right:clamp(16px,4vw,40px);margin-left:0 !important;padding-left:0 !important;border-left:0 !important}}
+</style>
+</helmet>
+<div style="position: relative; background: #16302A; color: #F6F4EE; font-family: 'Jost', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+<div class="pattern-layer" aria-hidden="true" style="position: absolute; inset: 0; opacity: {{patternOpacity}}; pointer-events: none"></div>
+<div style="position: relative">
+
+<header style="border-bottom: 1px solid rgba(246, 244, 238, 0.14); background: rgba(22, 48, 42, 0.85); position: relative">
+<nav aria-label="Principale" style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(16px, 4vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="./" style="font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 28px; line-height: 1.2; color: #F6F4EE; text-decoration: none; padding: 6px 0">The Milanese Table</a>
+<div style="display: flex; flex-wrap: wrap; gap: 0 28px; font-size: 15px; letter-spacing: 0.06em">
+<a href="#list" style="display: inline-flex; align-items: center; min-height: 44px; color: #F6F4EE; text-decoration: none">La lista</a>
+<a href="#areas" style="display: inline-flex; align-items: center; min-height: 44px; color: #F6F4EE; text-decoration: none">Quartieri</a>
+<a href="#dishes" style="display: inline-flex; align-items: center; min-height: 44px; color: #F6F4EE; text-decoration: none">Piatti milanesi</a>
+<a href="#about" style="display: inline-flex; align-items: center; min-height: 44px; color: #F6F4EE; text-decoration: none">Chi sono</a>
+<div class="lang-toggle" role="group" aria-label="Lingua" style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px; padding-left: 16px; border-left: 1px solid rgba(246, 244, 238, 0.25)"><a href="../" lang="en" hreflang="en" aria-label="English" style="display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 44px; opacity: 0.55"><svg width="26" height="13" viewBox="0 0 60 30" aria-hidden="true" style="display: block; border-radius: 2px; overflow: hidden"><rect width="60" height="30" fill="#012169"></rect><path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFFFFF" stroke-width="6"></path><path d="M30.00,15.00 L30.89,13.21 L66.26,30.89 L65.37,32.68ZM30.00,15.00 L29.11,16.79 L-6.26,-0.89 L-5.37,-2.68ZM30.00,15.00 L30.89,16.79 L-4.47,34.47 L-5.37,32.68ZM30.00,15.00 L29.11,13.21 L64.47,-4.47 L65.37,-2.68Z" fill="#C8102E"></path><path d="M30,0 V30 M0,15 H60" stroke="#FFFFFF" stroke-width="10"></path><path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"></path></svg></a><a href="./" lang="it" hreflang="it" aria-label="Italiano" aria-current="page" style="display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 44px; opacity: 1"><svg width="20" height="13" viewBox="0 0 3 2" aria-hidden="true" style="display: block; box-shadow: 0 0 0 2px #F6F4EE; border-radius: 2px; overflow: hidden"><rect width="1" height="2" fill="#009246"></rect><rect x="1" width="1" height="2" fill="#FFFFFF"></rect><rect x="2" width="1" height="2" fill="#CE2B37"></rect></svg></a></div>
+</div>
+</nav>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: clamp(48px, 7vw, 96px) clamp(16px, 4vw, 40px); display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #A8C3B1">Una guida personale per mangiare a Milano</p>
+<h1 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: clamp(48px, 6.4vw, 92px); line-height: 1.02; letter-spacing: -0.01em">I tavoli per cui <em style="font-style: italic; color: {{accent}}">attraverserei Milano</em>.</h1>
+<p style="margin: 0; max-width: 34em; font-size: 19px; color: #D7E2D9">Trattorie, risotti, cotolette e lunghi aperitivi. Una lista breve, aggiornata ogni volta che mangio in un posto che vale la pena raccontare.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#list" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 26px; background: {{accent}}; color: #16302A; text-decoration: none; font-weight: 500; border-radius: 999px">Vedi la lista <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div style="position: relative; aspect-ratio: 4 / 5; background: #2C4A41; border-radius: 240px 240px 6px 6px; overflow: hidden">
+<img src="../images/d78dfd1be0598def5a653e2af52a3d49.jpg" alt="Cantina con volta in mattoni e scaffali di vino, sedie di velluto rosso e lampadine a vista" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{op0}}; transition: opacity 1.2s ease">
+<img src="../images/ec54b7028872ef0ace65f9c469481215.jpg" alt="Trattoria luminosa con tovaglie bianche, un lampadario di vetro colorato e un bancone in legno lucido" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 50%; opacity: {{op1}}; transition: opacity 1.2s ease">
+<img src="../images/67cf2bbc75c9913b5956b5ffa7a303dd.jpg" alt="Sala con tovaglie scozzesi, modellini di velieri sugli scaffali e una colonna in mattoni" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{op2}}; transition: opacity 1.2s ease">
+<img src="../images/1794bbfa216cb182a7554177a25f49ad.jpg" alt="Bancone in legno scuro con sgabelli di velluto verde petrolio, una lampada a globo con la R e scaffali di libri e curiosità" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 50%; opacity: {{op3}}; transition: opacity 1.2s ease">
+<img src="../images/01e3d800a5408dfd5f11fd6f02f4ded2.jpg" alt="Bancone di piastrelle bianche e blu sotto stampe botaniche di rose, con sedie da bistrot e un lampadario in ottone" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{op4}}; transition: opacity 1.2s ease">
+<img src="../images/7c2ae2fb2eaba07f9f12e69923ec1f77.jpg" alt="Tavoli al sole davanti a un camino in mattoni" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 48% 50%; opacity: {{op5}}; transition: opacity 1.2s ease">
+<img src="../images/eae967db68dc5bd05e9d9f83b1741a59.jpg" alt="Sala color senape tappezzata di vecchie etichette incorniciate, su un pavimento di piastrelle esagonali" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{op6}}; transition: opacity 1.2s ease">
+<img src="../images/55beace08605f52de4e22d235664bbb4.jpg" alt="Tavoli alla finestra accanto a un giardino verde, sotto paralumi scozzesi" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 50%; opacity: {{op7}}; transition: opacity 1.2s ease">
+<img src="../images/dfa30b150bd1b1fdf4881c67370e1b67.jpg" alt="Sala rivestita in legno con tovaglie bianche, lampadario dai paralumi rossi e il dipinto di un'antica porta di Milano" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{op8}}; transition: opacity 1.2s ease">
+<div style="position: absolute; left: 0; right: 0; bottom: 12px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1" aria-pressed="{{pressed0}}" onClick="{{show0}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW0}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2" aria-pressed="{{pressed1}}" onClick="{{show1}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW1}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3" aria-pressed="{{pressed2}}" onClick="{{show2}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW2}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4" aria-pressed="{{pressed3}}" onClick="{{show3}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW3}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 5" aria-pressed="{{pressed4}}" onClick="{{show4}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW4}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp4}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 6" aria-pressed="{{pressed5}}" onClick="{{show5}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW5}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp5}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 7" aria-pressed="{{pressed6}}" onClick="{{show6}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW6}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp6}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 8" aria-pressed="{{pressed7}}" onClick="{{show7}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW7}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp7}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 9" aria-pressed="{{pressed8}}" onClick="{{show8}}" style="width: 38px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{dotW8}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{dotOp8}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.4); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+</div>
+</section>
+
+<section id="areas" style="border-top: 1px solid rgba(246, 244, 238, 0.14); border-bottom: 1px solid rgba(246, 244, 238, 0.14); background: rgba(22, 48, 42, 0.85)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 24px clamp(16px, 4vw, 40px); display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #A8C3B1; margin-right: 14px">Guide ai quartieri</span>
+<a href="brera.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 15px; box-sizing: border-box; border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none">Brera <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="navigli.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 15px; box-sizing: border-box; border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none">Navigli <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="isola.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 15px; box-sizing: border-box; border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none">Isola <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="porta-romana.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 15px; box-sizing: border-box; border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none">Porta Romana <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="porta-venezia.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 15px; box-sizing: border-box; border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none">Porta Venezia <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<a href="citta-studi.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 15px; box-sizing: border-box; border: 1px solid {{accent}}; color: {{accent}}; text-decoration: none">Città Studi <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px clamp(16px, 4vw, 40px) 0">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 32px">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: clamp(34px, 3.6vw, 48px); line-height: 1.1">Il mio tavolo piu recente</h2>
+<svg width="132" height="28" viewBox="0 0 132 28" fill="none" stroke="#A8C3B1" stroke-width="1.1" stroke-linecap="round" aria-hidden="true"><path d="M6 14h120"></path><path d="M40 14c5-8 14-10 21-8-4 6-12 9-21 8z"></path><path d="M40 14c5 8 14 10 21 8-4-6-12-9-21-8z"></path><path d="M71 14c5-8 14-10 21-8-4 6-12 9-21 8z"></path><path d="M71 14c5 8 14 10 21 8-4-6-12-9-21-8z"></path><circle cx="66" cy="14" r="2"></circle></svg>
+</div>
+<article style="display: flex; flex-wrap: wrap; background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden">
+<div style="position: relative; flex: 1 1 460px; min-width: 0; min-height: 420px; background: #DCE4DC; overflow: hidden">
+<img src="../images/83664c0ba68c5fca23e9c5f2e4a2ac8d.jpg" alt="Speciale Osteria vista dalla strada: una tenda verde smerlata con il nome Speciale sopra le alte vetrate" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{cop0}}; transition: opacity 1.2s ease">
+<img src="../images/444386328dfac013f688331bc1e12107.jpg" alt="La sala principale sotto travi di legno e un arco in mattoni con vetri colorati, con la cucina a vista sul fondo" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; opacity: {{cop1}}; transition: opacity 1.2s ease">
+<img src="../images/45a817b20f1de8ee5e564ea0fa06be9c.jpg" alt="Sedie in legno curvato con seduta in paglia di Vienna e tovaglie bianche accanto alle alte vetrate, sotto lampade smerlate e foto incorniciate" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{cop2}}; transition: opacity 1.2s ease">
+<img src="../images/cb1c7177bd1c8ea82bde6998bbe4d514.jpg" alt="Un tavolo d'angolo sotto piatti di ceramica dipinti a mano, una lampada smerlata e vetrinette in legno" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{cop3}}; transition: opacity 1.2s ease">
+<img src="../images/1199640a601f54963291650c7c7e875b.jpg" alt="File di tavoli apparecchiati sul marciapiede, con candelieri verdi e sedie dallo schienale a S" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{cop4}}; transition: opacity 1.2s ease">
+<div style="position: absolute; left: 0; right: 0; bottom: 10px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di Speciale Osteria" aria-pressed="{{cpressed0}}" onClick="{{cshow0}}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{cdotW0}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{cdotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di Speciale Osteria" aria-pressed="{{cpressed1}}" onClick="{{cshow1}}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{cdotW1}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{cdotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di Speciale Osteria" aria-pressed="{{cpressed2}}" onClick="{{cshow2}}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{cdotW2}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{cdotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di Speciale Osteria" aria-pressed="{{cpressed3}}" onClick="{{cshow3}}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{cdotW3}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{cdotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 5 di Speciale Osteria" aria-pressed="{{cpressed4}}" onClick="{{cshow4}}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{cdotW4}}; height: 8px; border-radius: 999px; background: #F6F4EE; opacity: {{cdotOp4}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; padding: clamp(28px, 4vw, 56px); display: flex; flex-direction: column; gap: 20px; box-sizing: border-box">
+<div style="display: flex; align-items: center; gap: 16px">
+<div style="width: 64px; height: 64px; flex: none; border-radius: 50%; border: 1px solid #1B1C1A; box-shadow: inset 0 0 0 5px #F6F4EE, inset 0 0 0 6px #1B1C1A; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Bodoni Moda', serif; line-height: 1"><span style="font-size: 10px; letter-spacing: 0.1em">N°</span><span style="font-size: 22px">01</span></div>
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #1F5F68">Osteria · Isola</p>
+</div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: clamp(34px, 3.6vw, 48px); line-height: 1.05">Speciale Osteria</h3>
+<p style="margin: 0; font-size: 18px; color: #3E413C">Vieni se vuoi i classici milanesi con un tocco moderno. Speciale è l'osteria di nuova generazione: divanetti di velluto, piatti di ceramica fatti a mano alle pareti e un pubblico vivace, per lo più giovane, che la riempie quasi tutte le sere. La cucina resta fedele alla tradizione; è la sala a essere un po' più contemporanea della classica trattoria.</p>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #8A5A37">Da ordinare</p>
+<ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column">
+<li style="display: flex; gap: 14px; padding: 10px 0; border-top: 1px solid #DDD8CC"><span style="flex: none; width: 26px; font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 20px; line-height: 1.3; color: #8A5A37">i.</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bodoni Moda', serif; font-size: 20px; line-height: 1.3">Mondeghili e maionese fatta in casa</span><span style="font-size: 15px; color: #5A5D57">Polpette milanesi croccanti con maionese fatta in casa</span></span></li>
+<li style="display: flex; gap: 14px; padding: 10px 0; border-top: 1px solid #DDD8CC"><span style="flex: 0 0 auto; width: 26px; font-family: &quot;Bodoni Moda&quot;, serif; font-style: italic; font-size: 20px; line-height: 1.3; color: rgb(138, 90, 55)">ii.</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: &quot;Bodoni Moda&quot;, serif; font-size: 20px; line-height: 1.3">Vitello tonnato</span><span style="font-size: 15px; color: rgb(90, 93, 87)">Fettine sottili di vitello sotto una salsa cremosa di tonno e capperi</span></span></li>
+<li style="display: flex; gap: 14px; padding: 10px 0; border-top: 1px solid #DDD8CC; border-bottom: 1px solid #DDD8CC"><span style="flex: none; width: 26px; font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 20px; line-height: 1.3; color: #8A5A37">iii.</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bodoni Moda', serif; font-size: 20px; line-height: 1.3">Risotto alla milanese con pistilli di zafferano e ossobuco di vitello</span><span style="font-size: 15px; color: #5A5D57">Risotto allo zafferano con pistilli interi, ossobuco di vitello brasato e gremolata</span></span></li>
+</ol>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 15px; color: #3E413C">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Speciale%20Osteria%2C%20Via%20Pastrengo%2011%2C%20Milano" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; text-decoration: underline; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Via Pastrengo 11<span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<span style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14" rx="1.5"></rect><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"></path></svg>Meglio prenotare: è spesso pieno</span>
+</div>
+<a href="speciale.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: underline; text-underline-offset: 6px">Leggi la recensione completa <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+</section>
+
+<section id="list" style="max-width: 1200px; margin: 0 auto; padding: 96px clamp(16px, 4vw, 40px) 0">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: clamp(34px, 3.6vw, 48px); line-height: 1.1">La lista</h2>
+<p style="margin: 0; font-size: 18px; color: #D7E2D9">Altri sei tavoli, uno per ogni cosa che Milano sa fare bene.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 28px; margin-top: 40px">
+
+<article style="background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<div style="position: relative; aspect-ratio: 3 / 2; background: #DCE4DC; overflow: hidden">
+<img src="../images/1a9bd5cad2d8b9672f1ad6dc7b3628f3.jpg" alt="La sala: tovaglie bianche, sedie scure in legno curvato, un lampadario di vetro colorato e il vecchio bancone in legno sul fondo" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{uop0}}; transition: opacity 1.2s ease">
+<img src="../images/8a59d932d98234693c2f0da36072a66b.jpg" alt="Lunghe tavolate sotto un soffitto blu scuro e un lampadario di vetro colorato, con porte dalle cornici blu e boiserie in legno" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; opacity: {{uop1}}; transition: opacity 1.2s ease">
+<img src="../images/5cd3d0d13389bcb76f3a512a14b62422.jpg" alt="Un tavolo d'angolo per quattro, apparecchiato con lino bianco e garofani rosa, contro la boiserie" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{uop2}}; transition: opacity 1.2s ease">
+<img src="../images/c99f749fea667340131d86c3fe6b4bbe.jpg" alt="La facciata di Masuelli: insegne bordeaux con le scritte Trattoria dal 1921 e Masuelli San Marco sopra porte verdi e piante in vaso" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; opacity: {{uop3}}; transition: opacity 1.2s ease">
+<button type="button" aria-label="Apri le foto di Trattoria Masuelli a schermo intero" onClick="{{uopen}}" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in"></button>
+<span aria-hidden="true" style="position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; border-radius: 50%; background: rgba(22, 48, 42, 0.62); color: #F6F4EE; display: flex; align-items: center; justify-content: center; pointer-events: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4l-7 7"></path><path d="M10 20H4v-6"></path><path d="M4 20l7-7"></path></svg></span>
+<div style="position: absolute; left: 0; right: 0; bottom: 4px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di Trattoria Masuelli" aria-pressed="{{upressed0}}" onClick="{{ushow0}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{udotW0}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{udotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di Trattoria Masuelli" aria-pressed="{{upressed1}}" onClick="{{ushow1}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{udotW1}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{udotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di Trattoria Masuelli" aria-pressed="{{upressed2}}" onClick="{{ushow2}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{udotW2}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{udotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di Trattoria Masuelli" aria-pressed="{{upressed3}}" onClick="{{ushow3}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{udotW3}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{udotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1; padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase"><span style="color: #1F5F68">N° 02 · Risotto</span><span role="img" aria-label="Prezzo: 4 su 5" style="color: #8A5A37; font-size: 15px; letter-spacing: 0.06em; white-space: nowrap">€€€€<span aria-hidden="true" style="opacity: 0.35">€</span></span></div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 28px; line-height: 1.15">Trattoria Masuelli</h3>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Trattoria%20Masuelli%20San%20Marco%2C%20Viale%20Umbria%2080%2C%20Milano" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; color: #5A5D57; text-decoration: underline; text-decoration-color: #CFC9BC; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>Viale Umbria 80 · Porta Romana</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<p style="margin: 0; font-size: 16px; color: #3E413C">Una trattoria centenaria tra Lombardia e Piemonte, con un risotto giallo da manuale e una delle migliori cotolette della città.</p>
+<a href="masuelli.html" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: none">Leggi di più <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+
+<article style="background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<div style="position: relative; aspect-ratio: 3 / 2; background: #DCE4DC; overflow: hidden">
+<img src="../images/ffc747fadb8313e8f9d37ee0ebaffa09.jpg" alt="La sala principale di Al Garghet: paralumi scozzesi rossi sotto travi di legno, mattoni a vista e stampe di caccia" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{gop0}}; transition: opacity 1.2s ease">
+<img src="../images/635727c7945d89dc8be59f8008b54f3b.jpg" alt="Una sala illuminata da lampade scozzesi arricciate, con tovaglie a fiori, una stufa a legna e un vecchio dipinto di caccia" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{gop1}}; transition: opacity 1.2s ease">
+<img src="../images/9102d603f4c85dd2c4058df7c52ffb22.jpg" alt="Una saletta arancione con uno specchio dorato, una lampada scozzese e un vaso di tulipani rossi alla finestra" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{gop2}}; transition: opacity 1.2s ease">
+<img src="../images/bffd9d9faf90566c2544bbcf5c07db81.jpg" alt="Una sala con modellini di velieri e tovaglie scozzesi, accanto a un pilastro in mattoni e al dipinto di un campo di papaveri" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{gop3}}; transition: opacity 1.2s ease">
+<img src="../images/15853bea9537337e14056625b1530cc5.jpg" alt="La veranda vetrata affacciata sugli alberi, con tovaglie a fiori e lampade arricciate" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{gop4}}; transition: opacity 1.2s ease">
+<img src="../images/2883b2f1c8b8bc3c04eaa5a99d43b69c.jpg" alt="Un'enorme cotoletta sottile coperta di pomodoro a cubetti, con ossobuco e risotto allo zafferano sullo sfondo" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; opacity: {{gop5}}; transition: opacity 1.2s ease">
+<button type="button" aria-label="Apri le foto di Al Garghet a schermo intero" onClick="{{gopen}}" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in"></button>
+<span aria-hidden="true" style="position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; border-radius: 50%; background: rgba(22, 48, 42, 0.62); color: #F6F4EE; display: flex; align-items: center; justify-content: center; pointer-events: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4l-7 7"></path><path d="M10 20H4v-6"></path><path d="M4 20l7-7"></path></svg></span>
+<div style="position: absolute; left: 0; right: 0; bottom: 4px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di Al Garghet" aria-pressed="{{gpressed0}}" onClick="{{gshow0}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{gdotW0}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{gdotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di Al Garghet" aria-pressed="{{gpressed1}}" onClick="{{gshow1}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{gdotW1}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{gdotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di Al Garghet" aria-pressed="{{gpressed2}}" onClick="{{gshow2}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{gdotW2}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{gdotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di Al Garghet" aria-pressed="{{gpressed3}}" onClick="{{gshow3}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{gdotW3}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{gdotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 5 di Al Garghet" aria-pressed="{{gpressed4}}" onClick="{{gshow4}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{gdotW4}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{gdotOp4}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 6 di Al Garghet" aria-pressed="{{gpressed5}}" onClick="{{gshow5}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{gdotW5}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{gdotOp5}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1; padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase"><span style="color: #1F5F68">N° 03 · Cotoletta</span><span role="img" aria-label="Prezzo: 5 su 5" style="color: #8A5A37; font-size: 15px; letter-spacing: 0.06em; white-space: nowrap">€€€€€</span></div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 28px; line-height: 1.15">Al Garghet</h3>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Al%20Garghet%2C%20Via%20Selvanesco%2036%2C%20Milano" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; color: #5A5D57; text-decoration: underline; text-decoration-color: #CFC9BC; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>Via Selvanesco 36 · Selvanesco</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<p style="margin: 0; font-size: 16px; color: #3E413C">Una trattoria di campagna al confine sud di Milano, famosa per l'enorme cotoletta a 'orecchia d'elefante' e per il giardino estivo all'ombra degli alberi.</p>
+<a href="al-garghet.html" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: none">Leggi di più <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+
+<article style="background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<div style="position: relative; aspect-ratio: 3 / 2; background: #DCE4DC; overflow: hidden">
+<img src="../images/eae967db68dc5bd05e9d9f83b1741a59.jpg" alt="Sala color senape tappezzata di vecchie etichette incorniciate, su un pavimento di piastrelle esagonali" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{top0}}; transition: opacity 1.2s ease">
+<img src="../images/fa61dde1d83482fc4ad091ae999b68df.jpg" alt="Tavoli apparecchiati da Trippa, con un orologio da stazione e un manifesto del Barbaresco sulle pareti gialle" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{top1}}; transition: opacity 1.2s ease">
+<img src="../images/72eb21c58da27f8406b4505c3a9895b1.jpg" alt="Il bancone di Trippa: scaffali di bottiglie sopra una macchina del caffè rossa, accanto a una parete di etichette incorniciate" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; opacity: {{top2}}; transition: opacity 1.2s ease">
+<img src="../images/df47cbfa525d64ebdfa20e9ab997d6ac.jpg" alt="La sala in tutta la sua lunghezza oltre il bancone, sotto lampade bianche a sospensione e un vecchio specchio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{top3}}; transition: opacity 1.2s ease">
+<img src="../images/be0faad71ad05b951b394eefaa44e6cd.jpg" alt="Un vecchio telefono nero a disco sulla parete gialla, sotto un'insegna Bertani" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{top4}}; transition: opacity 1.2s ease">
+<img src="../images/8831a26e72e3eed1dfb6b6d2cb599640.jpg" alt="Trippa in umido in una pentola di terracotta sotto una coltre di formaggio grattugiato, su una tovaglietta di Trippa" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{top5}}; transition: opacity 1.2s ease">
+<button type="button" aria-label="Apri le foto di Trippa a schermo intero" onClick="{{topen}}" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in"></button>
+<span aria-hidden="true" style="position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; border-radius: 50%; background: rgba(22, 48, 42, 0.62); color: #F6F4EE; display: flex; align-items: center; justify-content: center; pointer-events: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4l-7 7"></path><path d="M10 20H4v-6"></path><path d="M4 20l7-7"></path></svg></span>
+<div style="position: absolute; left: 0; right: 0; bottom: 4px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di Trippa" aria-pressed="{{tpressed0}}" onClick="{{tshow0}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{tdotW0}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{tdotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di Trippa" aria-pressed="{{tpressed1}}" onClick="{{tshow1}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{tdotW1}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{tdotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di Trippa" aria-pressed="{{tpressed2}}" onClick="{{tshow2}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{tdotW2}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{tdotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di Trippa" aria-pressed="{{tpressed3}}" onClick="{{tshow3}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{tdotW3}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{tdotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 5 di Trippa" aria-pressed="{{tpressed4}}" onClick="{{tshow4}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{tdotW4}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{tdotOp4}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 6 di Trippa" aria-pressed="{{tpressed5}}" onClick="{{tshow5}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{tdotW5}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{tdotOp5}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1; padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase"><span style="color: #1F5F68">N° 04 · Tradizione</span><span role="img" aria-label="Prezzo: 4 su 5" style="color: #8A5A37; font-size: 15px; letter-spacing: 0.06em; white-space: nowrap">€€€€<span aria-hidden="true" style="opacity: 0.35">€</span></span></div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 28px; line-height: 1.15">Trippa</h3>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Trippa%2C%20Via%20Giorgio%20Vasari%201%2C%20Milano" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; color: #5A5D57; text-decoration: underline; text-decoration-color: #CFC9BC; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>Via Giorgio Vasari 1 · Porta Romana</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<p style="margin: 0; font-size: 16px; color: #3E413C">Vieni per la trippa che le dà il nome, il vitello tonnato e il risotto con il midollo alla brace.</p>
+<a href="trippa.html" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: none">Leggi di più <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+
+<article style="background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<div style="position: relative; aspect-ratio: 3 / 2; background: #DCE4DC; overflow: hidden">
+<img src="../images/85473fb3b0b1ce1b6ac254db7a4c439d.jpg" alt="Un trancio alto di pizza coperto di mozzarella dorata e funghi trifolati" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{aop0}}; transition: opacity 1.2s ease">
+<img src="../images/c9335a47588f777796155abb9db6b616.jpg" alt="Un trancio con funghi e falde di prosciutto cotto, su una tovaglietta con la scritta 'Dal 1964'" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; opacity: {{aop1}}; transition: opacity 1.2s ease">
+<img src="../images/a060b58d7e4b43ed4d246a485f05a4c4.jpg" alt="Un trancio sotto uno spesso strato di mozzarella fusa, con carciofi e olive nere" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; opacity: {{aop2}}; transition: opacity 1.2s ease">
+<img src="../images/a749c49ab28492c6bc2908513f480c08.jpg" alt="Un trancio alto visto di lato, con tonno e cipolla cruda a fette sopra il formaggio fuso" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{aop3}}; transition: opacity 1.2s ease">
+<img src="../images/b0480ec358e1afc2aa6d4b1f99cb48a1.jpg" alt="Un grande trancio di margherita ricoperto di mozzarella fusa e appena dorata" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; opacity: {{aop4}}; transition: opacity 1.2s ease">
+<img src="../images/bd6301832ec90701f430cfbcc92261bc.jpg" alt="L'insegna con la scritta 'La Pizza dal 1964 Attilio' sopra la porta a vetri" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; opacity: {{aop5}}; transition: opacity 1.2s ease">
+<button type="button" aria-label="Apri le foto di La Pizza dal 1964 a schermo intero" onClick="{{aopen}}" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in"></button>
+<span aria-hidden="true" style="position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; border-radius: 50%; background: rgba(22, 48, 42, 0.62); color: #F6F4EE; display: flex; align-items: center; justify-content: center; pointer-events: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4l-7 7"></path><path d="M10 20H4v-6"></path><path d="M4 20l7-7"></path></svg></span>
+<div style="position: absolute; left: 0; right: 0; bottom: 4px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di La Pizza dal 1964" aria-pressed="{{apressed0}}" onClick="{{ashow0}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{adotW0}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{adotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di La Pizza dal 1964" aria-pressed="{{apressed1}}" onClick="{{ashow1}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{adotW1}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{adotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di La Pizza dal 1964" aria-pressed="{{apressed2}}" onClick="{{ashow2}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{adotW2}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{adotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di La Pizza dal 1964" aria-pressed="{{apressed3}}" onClick="{{ashow3}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{adotW3}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{adotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 5 di La Pizza dal 1964" aria-pressed="{{apressed4}}" onClick="{{ashow4}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{adotW4}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{adotOp4}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 6 di La Pizza dal 1964" aria-pressed="{{apressed5}}" onClick="{{ashow5}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{adotW5}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{adotOp5}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1; padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase"><span style="color: #1F5F68">N° 05 · Pizza alla milanese</span><span role="img" aria-label="Prezzo: 1 su 5" style="color: #8A5A37; font-size: 15px; letter-spacing: 0.06em; white-space: nowrap">€<span aria-hidden="true" style="opacity: 0.35">€€€€</span></span></div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 28px; line-height: 1.15">La Pizza dal 1964 – Da&nbsp;Attilio</h3>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Pizza%20dal%201964%2C%20Via%20Teodosio%2082%2C%20Milano" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; color: #5A5D57; text-decoration: underline; text-decoration-color: #CFC9BC; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>Via Teodosio 82 · Casoretto</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<p style="margin: 0; font-size: 16px; color: #3E413C">La vera pizza milanese: tranci alti e soffici cotti in teglia, con la base croccante e una coltre di mozzarella.</p>
+<a href="da-attilio.html" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: none">Leggi di più <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+
+<article style="background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<div style="position: relative; aspect-ratio: 3 / 2; background: #DCE4DC; overflow: hidden">
+<img src="../images/5889af9ec4ebc72aeaa9e2efe3e8e2f5.jpg" alt="L'insegna dorata Roncoroni Classici Gastronomici sopra una veranda vetrata che elenca pâté en croûte, acciughe e bolliti" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; opacity: {{mop0}}; transition: opacity 1.2s ease">
+<img src="../images/f7f61ba715e45f60e6e93f317120bbf4.jpg" alt="Un tavolo rotondo in legno con tovagliette dipinte ad animali, bicchieri incisi e una sedia in legno curvato con seduta in paglia di Vienna" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{mop1}}; transition: opacity 1.2s ease">
+<img src="../images/dce84fb0f55f1a17d6cbbc4e52059074.jpg" alt="Il bancone sotto scaffali di libri di cucina, manga, giocattoli e vino, con una lampada a globo e la veranda sullo sfondo" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 55%; opacity: {{mop2}}; transition: opacity 1.2s ease">
+<img src="../images/d9edd34628f47fb2174bd975e788cbc2.jpg" alt="Il bancone rivestito in legno con sgabelli di velluto verde, una lampada con la R e una fila di ritratti di chef alla parete" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 55%; opacity: {{mop3}}; transition: opacity 1.2s ease">
+<button type="button" aria-label="Apri le foto di Roncoroni a schermo intero" onClick="{{mopen}}" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in"></button>
+<span aria-hidden="true" style="position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; border-radius: 50%; background: rgba(22, 48, 42, 0.62); color: #F6F4EE; display: flex; align-items: center; justify-content: center; pointer-events: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4l-7 7"></path><path d="M10 20H4v-6"></path><path d="M4 20l7-7"></path></svg></span>
+<div style="position: absolute; left: 0; right: 0; bottom: 4px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di Roncoroni" aria-pressed="{{mpressed0}}" onClick="{{mshow0}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{mdotW0}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{mdotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di Roncoroni" aria-pressed="{{mpressed1}}" onClick="{{mshow1}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{mdotW1}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{mdotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di Roncoroni" aria-pressed="{{mpressed2}}" onClick="{{mshow2}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{mdotW2}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{mdotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di Roncoroni" aria-pressed="{{mpressed3}}" onClick="{{mshow3}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{mdotW3}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{mdotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1; padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase"><span style="color: #1F5F68">N° 06 · Gastronomia</span><span role="img" aria-label="Prezzo: 5 su 5" style="color: #8A5A37; font-size: 15px; letter-spacing: 0.06em; white-space: nowrap">€€€€€</span></div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 28px; line-height: 1.15">Roncoroni Classici Gastronomici</h3>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Roncoroni%20Classici%20Gastronomici%2C%20Via%20Edmondo%20De%20Amicis%204%2C%20Milano" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; color: #5A5D57; text-decoration: underline; text-decoration-color: #CFC9BC; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>Via Edmondo De Amicis 4 · Porta Ticinese</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<p style="margin: 0; font-size: 16px; color: #3E413C">Un piccolo bistrot accanto alle Colonne di San Lorenzo: pâté en croûte, acciughe al verde, frattaglie e salse fatte come si deve.</p>
+<a href="roncoroni.html" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: none">Leggi di più <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+
+<article style="background: #F6F4EE; color: #1B1C1A; border-radius: 6px; overflow: hidden; display: flex; flex-direction: column">
+<div style="position: relative; aspect-ratio: 3 / 2; background: #DCE4DC; overflow: hidden">
+<img src="../images/9c2bf907b8512d854542291475d2270a.jpg" alt="Sala rivestita in legno con una porta ad arco, tovaglie bianche, lampadari dai paralumi rossi e tende drappeggiate" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{rop0}}; transition: opacity 1.2s ease">
+<img src="../images/ca20e90a6ec9bcee5b669c88e0df493c.jpg" alt="Un grande dipinto di un'antica porta di Milano tra scaffali di vino ad arco, sotto un lampadario dai paralumi rossi" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; opacity: {{rop1}}; transition: opacity 1.2s ease">
+<img src="../images/2dace573f815854ed4060a27da8bef84.jpg" alt="Una sala del vino con volta in mattoni, scaffali di bottiglie, una vecchia affettatrice e sedie di velluto rosso attorno a tavoli di vetro" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: {{rop2}}; transition: opacity 1.2s ease">
+<img src="../images/4afe834acd5a9547af536b4b7cade4c8.jpg" alt="Un tavolo riservato per quattro in una cantina con volta in mattoni piena di bottiglie, con sedie di velluto rosso" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; opacity: {{rop3}}; transition: opacity 1.2s ease">
+<img src="../images/1d9a497c2f148672f12938685fc10462.jpg" alt="Frigoriferi per il vino a vetro e una cella di frollatura per la carne accanto a un tavolo apparecchiato, sotto lampade dai paralumi rossi" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; opacity: {{rop4}}; transition: opacity 1.2s ease">
+<button type="button" aria-label="Apri le foto di Trattoria de la Trebia a schermo intero" onClick="{{ropen}}" style="position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in"></button>
+<span aria-hidden="true" style="position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; border-radius: 50%; background: rgba(22, 48, 42, 0.62); color: #F6F4EE; display: flex; align-items: center; justify-content: center; pointer-events: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4l-7 7"></path><path d="M10 20H4v-6"></path><path d="M4 20l7-7"></path></svg></span>
+<div style="position: absolute; left: 0; right: 0; bottom: 4px; display: flex; justify-content: center; gap: 0">
+<button type="button" aria-label="Mostra la foto 1 di Trattoria de la Trebia" aria-pressed="{{rpressed0}}" onClick="{{rshow0}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{rdotW0}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{rdotOp0}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 2 di Trattoria de la Trebia" aria-pressed="{{rpressed1}}" onClick="{{rshow1}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{rdotW1}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{rdotOp1}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 3 di Trattoria de la Trebia" aria-pressed="{{rpressed2}}" onClick="{{rshow2}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{rdotW2}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{rdotOp2}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 4 di Trattoria de la Trebia" aria-pressed="{{rpressed3}}" onClick="{{rshow3}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{rdotW3}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{rdotOp3}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+<button type="button" aria-label="Mostra la foto 5 di Trattoria de la Trebia" aria-pressed="{{rpressed4}}" onClick="{{rshow4}}" style="width: 40px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><span style="display: block; width: {{rdotW4}}; height: 7px; border-radius: 999px; background: #F6F4EE; opacity: {{rdotOp4}}; box-shadow: 0 0 0 1px rgba(22, 48, 42, 0.45); transition: width 0.4s ease, opacity 0.4s ease"></span></button>
+</div>
+</div>
+<div style="flex: 1; padding: 22px 24px 18px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase"><span style="color: #1F5F68">N° 07 · Trattoria</span><span role="img" aria-label="Prezzo: 4 su 5" style="color: #8A5A37; font-size: 15px; letter-spacing: 0.06em; white-space: nowrap">€€€€<span aria-hidden="true" style="opacity: 0.35">€</span></span></div>
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 28px; line-height: 1.15">Trattoria de la Trebia</h3>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Trattoria%20de%20la%20Trebia%2C%20Via%20Trebbia%2032%2C%20Milano" target="_blank" rel="noopener" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 36px; font-size: 15px; color: #5A5D57; text-decoration: underline; text-decoration-color: #CFC9BC; text-underline-offset: 4px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span>Via Trebbia 32 · Porta Romana</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap"> (si apre in Google Maps)</span></a>
+<p style="margin: 0; font-size: 16px; color: #3E413C">A conduzione familiare dal 1981 e costruita attorno alla brace: vieni per la fiorentina, la tagliata e la cotoletta di vitello con l'osso oltre ai classici della tradizione milanese</p>
+<a href="trebia.html" style="margin-top: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1F5F68; font-weight: 500; text-decoration: none">Leggi di più <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="dishes" style="background: #1D3A33; margin-top: 112px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px clamp(16px, 4vw, 40px)">
+<div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 48px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #A8C3B1">Prima di ordinare</p>
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: clamp(34px, 3.6vw, 48px); line-height: 1.1">Mangia come un <em style="font-style: italic; color: {{accent}}">milanese</em></h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 40px 48px">
+<div style="border-top: 1px solid rgba(246, 244, 238, 0.22); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 500; font-size: 26px; line-height: 1.2">Risotto alla milanese</h3>
+<p style="margin: 0; font-size: 16px; color: #D7E2D9">Risotto dorato allo zafferano, tradizionalmente arricchito con midollo di bue. Spesso servito con l'ossobuco.</p>
+</div>
+<div style="border-top: 1px solid rgba(246, 244, 238, 0.22); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 500; font-size: 26px; line-height: 1.2">Cotoletta alla milanese</h3>
+<p style="margin: 0; font-size: 16px; color: #D7E2D9">Una costoletta di vitello con l'osso, impanata e fritta nel burro fino a una doratura intensa.</p>
+</div>
+<div style="border-top: 1px solid rgba(246, 244, 238, 0.22); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 500; font-size: 26px; line-height: 1.2">Ossobuco</h3>
+<p style="margin: 0; font-size: 16px; color: #D7E2D9">Stinco di vitello tagliato a rondelle e brasato lentamente, completato con la gremolata (scorza di limone, aglio e prezzemolo).</p>
+</div>
+<div style="border-top: 1px solid rgba(246, 244, 238, 0.22); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 500; font-size: 26px; line-height: 1.2">Mondeghili</h3>
+<p style="margin: 0; font-size: 16px; color: #D7E2D9">Polpette milanesi, nate per recuperare gli avanzi del bollito, fritte fino a diventare croccanti.</p>
+</div>
+<div style="border-top: 1px solid rgba(246, 244, 238, 0.22); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 500; font-size: 26px; line-height: 1.2">Cassoeula</h3>
+<p style="margin: 0; font-size: 16px; color: #D7E2D9">Uno stufato invernale di tagli di maiale e verza, di solito servito con la polenta.</p>
+</div>
+<div style="border-top: 1px solid rgba(246, 244, 238, 0.22); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bodoni Moda', serif; font-style: italic; font-weight: 500; font-size: 26px; line-height: 1.2">Panettone</h3>
+<p style="margin: 0; font-size: 16px; color: #D7E2D9">L'alto dolce lievitato di Milano, a lunga lievitazione, con canditi e uvetta. Un'istituzione del Natale, famoso anche all'estero.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" style="max-width: 1200px; margin: 0 auto; padding: 112px clamp(16px, 4vw, 40px) 0; display: flex; flex-wrap: wrap; gap: 48px; align-items: stretch">
+<div style="flex: 1 1 440px; min-width: 0; max-width: 760px; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #A8C3B1">Chi sceglie i tavoli</p>
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: clamp(34px, 3.6vw, 48px); line-height: 1.1">La lista di una persona, non di un algoritmo.</h2>
+<p style="margin: 0; font-size: 19px; color: #D7E2D9">Sono di Milano e ogni locale su questo sito è un posto dove ho mangiato e dove manderei volentieri un' amico. TripAdvisor e Google rischiano di sommergerti di opzioni: Parti da qui.</p>
+<svg role="img" aria-label="Gianluca" viewBox="93 91 2050 512" style="display: block; width: 290px; max-width: 100%; height: auto; margin-top: 6px; color: {{accent}}"><title>Gianluca</title><path d="M372,599C373,598 376,595 378,592C381,588 386,582 391,577C399,569 425,540 436,528C440,524 446,516 451,510C456,505 462,498 466,494C469,490 473,486 474,485C475,483 482,475 490,467C497,458 505,449 508,446C523,428 566,387 586,370C592,365 599,359 601,357C604,355 608,352 610,351C612,350 617,346 622,342C627,338 634,334 637,332C640,330 644,328 646,326C647,325 651,323 655,322C658,320 662,318 663,318C666,316 687,308 689,308C692,308 689,314 672,338C647,376 641,393 651,404C662,415 678,409 722,380C741,368 741,367 748,362C751,360 756,356 758,354C760,353 764,350 767,348C773,343 788,335 790,335C791,335 791,337 790,349C789,376 796,389 808,384C814,382 816,372 811,368L809,366L809,349C810,327 809,321 804,316C797,308 792,311 746,343C740,346 733,351 729,354C725,356 720,360 717,362C712,365 700,373 690,378C684,382 669,389 668,389C662,389 675,367 703,326C724,297 716,281 687,291C684,291 679,293 676,294C658,300 639,310 616,325C600,336 593,341 576,355C544,380 499,425 469,461C466,465 459,472 455,478C450,483 441,493 434,500C428,508 418,520 410,527C403,535 395,544 392,548C386,554 383,556 383,554C383,550 420,486 444,448C446,444 451,437 454,432C457,426 462,417 466,411C487,376 496,355 496,343C496,335 489,322 482,319C457,305 408,299 318,299C289,299 253,300 236,301C145,307 120,308 120,306C120,298 169,269 235,237C245,232 259,225 266,221C302,202 359,175 362,175C362,175 368,173 374,170C427,147 497,126 540,119C560,116 564,116 570,117C580,119 583,117 582,109C580,99 560,98 522,105C495,110 443,125 407,139C399,142 393,144 392,144C391,144 347,162 344,164C343,164 335,168 326,172C304,182 304,182 275,197C247,211 230,219 216,226C198,235 165,253 156,258C151,261 145,265 142,267C108,284 89,307 101,318C102,320 105,321 107,321C108,321 111,322 114,323C120,324 155,324 178,322C259,315 365,314 412,320C416,320 423,321 428,322C432,322 437,324 440,324C442,325 445,326 447,326C449,326 461,330 471,334C480,337 479,349 464,376C455,393 445,412 442,416C441,417 437,425 433,432C428,439 423,449 420,454C417,459 411,467 408,473C404,479 400,487 397,491C368,540 350,583 354,594C356,599 367,602 372,599ZM1210,451C1221,445 1234,438 1239,434C1241,432 1245,430 1248,429C1260,422 1310,389 1323,378C1326,376 1332,371 1336,368C1340,365 1347,359 1351,356C1360,348 1363,347 1361,352C1357,369 1367,381 1384,379C1397,378 1417,370 1453,352C1466,345 1468,345 1468,348C1468,364 1493,372 1518,364C1526,361 1542,355 1545,353C1548,351 1550,353 1550,356C1550,366 1566,374 1585,374C1596,374 1627,372 1629,371C1629,370 1636,369 1643,367C1650,365 1660,363 1664,362C1667,361 1674,359 1679,358C1684,356 1689,354 1691,354C1692,353 1696,352 1698,351L1703,351L1705,355C1708,360 1712,362 1720,363C1726,363 1744,361 1750,358C1752,358 1756,356 1758,355C1761,354 1767,352 1771,351C1778,348 1778,348 1779,349C1794,374 1831,375 1924,355C1952,349 1968,346 1972,345C1975,345 1981,344 1986,343C2052,330 2073,328 2100,330C2119,331 2121,332 2121,335C2121,343 2136,343 2139,336C2142,328 2138,320 2128,316C2116,311 2078,310 2061,313C2057,313 2048,315 2041,316C2028,318 2021,319 1990,324C1983,326 1974,328 1970,328C1966,329 1957,331 1950,333C1943,334 1932,336 1926,337C1907,341 1894,344 1888,345C1884,345 1878,346 1873,347C1844,351 1830,352 1817,349C1805,347 1800,345 1800,341C1800,339 1800,338 1801,338C1802,338 1808,328 1809,324C1810,320 1806,309 1803,306C1793,296 1760,301 1734,315C1725,320 1720,323 1711,330C1707,333 1697,337 1688,339C1684,340 1675,342 1668,344C1640,351 1624,354 1606,356C1579,358 1563,353 1573,345C1574,343 1577,341 1579,339C1590,328 1622,316 1631,320C1638,322 1644,320 1644,314C1644,293 1584,305 1560,330C1552,337 1507,351 1497,349C1486,347 1486,344 1494,332C1503,319 1489,311 1477,321C1474,324 1470,327 1469,327C1468,328 1465,329 1462,331C1460,332 1457,334 1454,335C1452,335 1446,338 1440,341C1435,343 1429,346 1428,346C1427,347 1422,349 1417,351C1403,357 1382,363 1380,361C1378,358 1388,334 1397,323C1408,308 1395,299 1382,311C1378,314 1373,318 1371,320C1368,321 1363,325 1360,328C1320,360 1302,374 1287,384C1279,389 1270,394 1266,396C1263,399 1258,401 1256,403C1255,404 1250,406 1247,408C1243,410 1235,415 1229,419C1213,428 1196,438 1194,438C1185,438 1193,385 1209,345C1222,311 1224,309 1249,286C1354,195 1415,113 1391,98C1385,94 1384,94 1372,100C1353,110 1340,122 1323,145C1321,147 1317,153 1313,157C1304,167 1287,188 1284,193C1282,196 1275,205 1269,213C1245,245 1227,272 1216,291C1212,299 1209,304 1206,306C1204,307 1198,312 1193,317C1187,321 1181,326 1178,328C1176,329 1172,332 1169,334C1138,357 1114,363 1099,350C1090,342 1073,339 1063,344C1059,346 1059,345 1058,338C1056,323 1040,321 1012,334C978,350 958,358 958,355C958,353 961,348 965,345C969,340 970,336 968,330C968,328 967,325 966,322C964,315 953,305 943,302C925,298 901,306 881,324C879,326 876,328 874,328C871,329 861,339 858,344C846,375 881,385 930,363C937,360 939,360 939,363C939,365 940,367 942,369C951,378 964,377 994,362C1026,347 1038,342 1040,345C1040,347 1036,356 1032,361C1024,371 1038,383 1048,374C1052,370 1066,363 1072,361C1078,360 1080,360 1087,365C1105,379 1127,379 1147,367C1150,365 1153,363 1154,363C1155,363 1171,353 1174,349C1178,346 1192,336 1193,336C1194,336 1194,337 1191,344C1160,423 1169,471 1210,451ZM890,351C876,348 913,320 930,320C939,320 948,325 948,331C948,341 908,355 890,351ZM1735,340C1734,340 1733,339 1733,339C1733,337 1754,325 1757,325C1758,325 1762,324 1766,322C1774,320 1778,319 1781,322C1786,325 1781,332 1769,335C1766,336 1761,338 1759,339C1755,341 1740,342 1735,340ZM1261,251C1261,250 1263,247 1265,244C1268,241 1272,235 1274,231C1281,221 1325,163 1329,158C1330,156 1333,153 1336,150C1342,142 1351,132 1356,130C1358,129 1363,126 1366,124C1395,102 1342,173 1287,229C1265,250 1261,254 1261,251ZM794,246C796,244 795,233 792,229C787,221 776,226 776,236C776,245 788,252 794,246Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+</div>
+</section>
+
+<footer style="margin-top: 112px; border-top: 1px solid rgba(246, 244, 238, 0.14)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 40px) 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<a href="./" style="font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 24px; color: #F6F4EE; text-decoration: none">The Milanese Table</a>
+<p style="margin: 0; font-size: 14px; color: #A8C3B1">© 2026 The Milanese Table · Milano</p>
+</div>
+</footer>
+
+<sc-if value="{{lbOpen}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="{{lbTitle}}" onKeyDown="{{lbKey}}" onClick="{{lbBackdrop}}" style="position: fixed; inset: 0; z-index: 1000; background: rgba(9, 20, 17, 0.94); display: flex; flex-direction: column; align-items: stretch; padding: 16px; box-sizing: border-box">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #D7E2D9; font-size: 14px; letter-spacing: 0.08em; min-height: 48px">
+<span style="padding-left: 4px"><span style="font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 20px; letter-spacing: 0; color: #F6F4EE">{{lbCaption}}</span><span style="margin-left: 12px">{{lbCount}}</span></span>
+<button type="button" autoFocus="{{ true }}" aria-label="Chiudi la galleria" onClick="{{lbClose}}" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(246, 244, 238, 0.35); background: transparent; color: #F6F4EE; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></button>
+</div>
+<div onClick="{{lbBackdrop}}" style="flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; gap: 8px">
+<button type="button" aria-label="Foto precedente" onClick="{{lbPrev}}" style="flex: none; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(246, 244, 238, 0.35); background: rgba(22, 48, 42, 0.6); color: #F6F4EE; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<div onClick="{{lbBackdrop}}" style="flex: 1; min-width: 0; height: 100%; display: flex; align-items: center; justify-content: center">
+<img src="{{lbSrc}}" alt="{{lbAlt}}" style="display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100vh - 112px); border-radius: 3px; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45)">
+</div>
+<button type="button" aria-label="Foto successiva" onClick="{{lbNext}}" style="flex: none; width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(246, 244, 238, 0.35); background: rgba(22, 48, 42, 0.6); color: #F6F4EE; cursor: pointer; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+</div>
+</div>
+</sc-if>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#EBB0AA&quot;,&quot;options&quot;:[&quot;#EBB0AA&quot;,&quot;#D69A45&quot;,&quot;#A8C3B1&quot;]},&quot;pattern&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:70,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:5,&quot;unit&quot;:&quot;%&quot;,&quot;section&quot;:&quot;Background&quot;},&quot;slideSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:5,&quot;min&quot;:3,&quot;max&quot;:12,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;section&quot;:&quot;Hero photos&quot;},&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:4700}}">
+class Component extends DCLogic {
+componentDidMount() {
+this._startSlides();
+this._startCardSlides(true);
+this._startGalleries();
+}
+componentDidUpdate(prevProps) {
+if (prevProps.slideSeconds !== this.props.slideSeconds) {
+this._startSlides();
+this._startCardSlides(true);
+this._startGalleries();
+}
+}
+componentWillUnmount() {
+if (this._slideTimer) clearInterval(this._slideTimer);
+if (this._cardTimer) clearInterval(this._cardTimer);
+if (this._cardDelay) clearTimeout(this._cardDelay);
+if (this._galTimer) clearInterval(this._galTimer);
+}
+_galleryPhotos() {
+return {
+m: { title: "Roncoroni", items: [
+{ src: "../images/5889af9ec4ebc72aeaa9e2efe3e8e2f5.jpg", alt: "L'insegna dorata Roncoroni Classici Gastronomici sopra una veranda vetrata che elenca pâté en croûte, acciughe e bolliti" },
+{ src: "../images/f7f61ba715e45f60e6e93f317120bbf4.jpg", alt: "Un tavolo rotondo in legno con tovagliette dipinte ad animali, bicchieri incisi e una sedia in legno curvato con seduta in paglia di Vienna" },
+{ src: "../images/dce84fb0f55f1a17d6cbbc4e52059074.jpg", alt: "Il bancone sotto scaffali di libri di cucina, manga, giocattoli e vino, con una lampada a globo e la veranda sullo sfondo" },
+{ src: "../images/d9edd34628f47fb2174bd975e788cbc2.jpg", alt: "Il bancone rivestito in legno con sgabelli di velluto verde, una lampada con la R e una fila di ritratti di chef alla parete" }
+] },
+t: { title: 'Trippa', items: [
+{ src: '../images/eae967db68dc5bd05e9d9f83b1741a59.jpg', alt: 'Sala color senape tappezzata di vecchie etichette incorniciate, su un pavimento di piastrelle esagonali' },
+{ src: '../images/fa61dde1d83482fc4ad091ae999b68df.jpg', alt: 'Tavoli apparecchiati da Trippa, con un orologio da stazione e un manifesto del Barbaresco sulle pareti gialle' },
+{ src: '../images/72eb21c58da27f8406b4505c3a9895b1.jpg', alt: "Il bancone di Trippa: scaffali di bottiglie sopra una macchina del caffè rossa, accanto a una parete di etichette incorniciate" },
+{ src: '../images/df47cbfa525d64ebdfa20e9ab997d6ac.jpg', alt: 'La sala in tutta la sua lunghezza oltre il bancone, sotto lampade bianche a sospensione e un vecchio specchio' },
+{ src: '../images/be0faad71ad05b951b394eefaa44e6cd.jpg', alt: 'Un vecchio telefono nero a disco sulla parete gialla, sotto un\'insegna Bertani' },
+{ src: '../images/8831a26e72e3eed1dfb6b6d2cb599640.jpg', alt: 'Trippa in umido in una pentola di terracotta sotto una coltre di formaggio grattugiato, su una tovaglietta di Trippa' }
+] },
+g: { title: "Al Garghet", items: [
+{ src: "../images/ffc747fadb8313e8f9d37ee0ebaffa09.jpg", alt: "La sala principale di Al Garghet: paralumi scozzesi rossi sotto travi di legno, mattoni a vista e stampe di caccia" },
+{ src: "../images/635727c7945d89dc8be59f8008b54f3b.jpg", alt: "Una sala illuminata da lampade scozzesi arricciate, con tovaglie a fiori, una stufa a legna e un vecchio dipinto di caccia" },
+{ src: "../images/9102d603f4c85dd2c4058df7c52ffb22.jpg", alt: "Una saletta arancione con uno specchio dorato, una lampada scozzese e un vaso di tulipani rossi alla finestra" },
+{ src: "../images/bffd9d9faf90566c2544bbcf5c07db81.jpg", alt: "Una sala con modellini di velieri e tovaglie scozzesi, accanto a un pilastro in mattoni e al dipinto di un campo di papaveri" },
+{ src: "../images/15853bea9537337e14056625b1530cc5.jpg", alt: "La veranda vetrata affacciata sugli alberi, con tovaglie a fiori e lampade arricciate" },
+{ src: "../images/2883b2f1c8b8bc3c04eaa5a99d43b69c.jpg", alt: "Un'enorme cotoletta sottile coperta di pomodoro a cubetti, con ossobuco e risotto allo zafferano sullo sfondo" }
+] },
+r: { title: "Trattoria de la Trebia", items: [
+{ src: "../images/9c2bf907b8512d854542291475d2270a.jpg", alt: "Sala rivestita in legno con una porta ad arco, tovaglie bianche, lampadari dai paralumi rossi e tende drappeggiate" },
+{ src: "../images/ca20e90a6ec9bcee5b669c88e0df493c.jpg", alt: "Un grande dipinto di un'antica porta di Milano tra scaffali di vino ad arco, sotto un lampadario dai paralumi rossi" },
+{ src: "../images/2dace573f815854ed4060a27da8bef84.jpg", alt: "Una sala del vino con volta in mattoni, scaffali di bottiglie, una vecchia affettatrice e sedie di velluto rosso attorno a tavoli di vetro" },
+{ src: "../images/4afe834acd5a9547af536b4b7cade4c8.jpg", alt: "Un tavolo riservato per quattro in una cantina con volta in mattoni piena di bottiglie, con sedie di velluto rosso" },
+{ src: "../images/1d9a497c2f148672f12938685fc10462.jpg", alt: "Frigoriferi per il vino a vetro e una cella di frollatura per la carne accanto a un tavolo apparecchiato, sotto lampade dai paralumi rossi" }
+] },
+u: { title: "Trattoria Masuelli", items: [
+{ src: "../images/1a9bd5cad2d8b9672f1ad6dc7b3628f3.jpg", alt: "La sala: tovaglie bianche, sedie scure in legno curvato, un lampadario di vetro colorato e il vecchio bancone in legno sul fondo" },
+{ src: "../images/8a59d932d98234693c2f0da36072a66b.jpg", alt: "Lunghe tavolate sotto un soffitto blu scuro e un lampadario di vetro colorato, con porte dalle cornici blu e boiserie in legno" },
+{ src: "../images/5cd3d0d13389bcb76f3a512a14b62422.jpg", alt: "Un tavolo d'angolo per quattro, apparecchiato con lino bianco e garofani rosa, contro la boiserie" },
+{ src: "../images/c99f749fea667340131d86c3fe6b4bbe.jpg", alt: "La facciata di Masuelli: insegne bordeaux con le scritte Trattoria dal 1921 e Masuelli San Marco sopra porte verdi e piante in vaso" }
+] },
+a: { title: "La Pizza dal 1964", items: [
+{ src: "../images/85473fb3b0b1ce1b6ac254db7a4c439d.jpg", alt: "Un trancio alto di pizza coperto di mozzarella dorata e funghi trifolati" },
+{ src: "../images/c9335a47588f777796155abb9db6b616.jpg", alt: "Un trancio con funghi e falde di prosciutto cotto, su una tovaglietta con la scritta 'Dal 1964'" },
+{ src: "../images/a060b58d7e4b43ed4d246a485f05a4c4.jpg", alt: "Un trancio sotto uno spesso strato di mozzarella fusa, con carciofi e olive nere" },
+{ src: "../images/a749c49ab28492c6bc2908513f480c08.jpg", alt: "Un trancio alto visto di lato, con tonno e cipolla cruda a fette sopra il formaggio fuso" },
+{ src: "../images/b0480ec358e1afc2aa6d4b1f99cb48a1.jpg", alt: "Un grande trancio di margherita ricoperto di mozzarella fusa e appena dorata" },
+{ src: "../images/bd6301832ec90701f430cfbcc92261bc.jpg", alt: "L'insegna con la scritta 'La Pizza dal 1964 Attilio' sopra la porta a vetri" }
+] }
+};
+}
+_galleries() {
+const photos = this._galleryPhotos();
+const sizes = {};
+for (const k in photos) sizes[k] = photos[k].items.length;
+return sizes;
+}
+_lbStep(d) {
+const lb = this.state && this.state.lb;
+if (!lb) return;
+const n = this._galleryPhotos()[lb.k].items.length;
+this.setState({ lb: { k: lb.k, i: ((lb.i + d) % n + n) % n } });
+}
+_startGalleries() {
+if (this._galTimer) clearInterval(this._galTimer);
+this._galTimer = null;
+let reduce = false;
+try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+if (reduce) return;
+const secs = Math.max(2, this.props.slideSeconds ?? 5) * 1.6;
+const keys = Object.keys(this._galleries());
+let turn = 0;
+this._galTimer = setInterval(() => {
+const sizes = this._galleries();
+const k = keys[turn % keys.length];
+turn++;
+const g = Object.assign({}, (this.state && this.state.gal) || {});
+g[k] = ((g[k] || 0) + 1) % sizes[k];
+this.setState({ gal: g });
+}, (secs * 1000) / Math.max(1, keys.length));
+}
+_showGallery(k, i) {
+const g = Object.assign({}, (this.state && this.state.gal) || {});
+g[k] = i;
+this.setState({ gal: g });
+this._startGalleries();
+}
+_startCardSlides(offset) {
+if (this._cardTimer) clearInterval(this._cardTimer);
+if (this._cardDelay) clearTimeout(this._cardDelay);
+this._cardTimer = null;
+this._cardDelay = null;
+let reduce = false;
+try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+if (reduce) return;
+const secs = Math.max(2, this.props.slideSeconds ?? 5);
+const begin = () => { this._cardTimer = setInterval(() => this._goCard(this._card() + 1), secs * 1000); };
+if (offset) {
+this._cardDelay = setTimeout(() => { this._goCard(this._card() + 1); begin(); }, secs * 1500);
+} else {
+begin();
+}
+}
+_card() {
+return (this.state && this.state.card) || 0;
+}
+_goCard(i) {
+this.setState({ card: ((i % 5) + 5) % 5 });
+}
+_startSlides() {
+if (this._slideTimer) clearInterval(this._slideTimer);
+this._slideTimer = null;
+let reduce = false;
+try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+if (reduce) return;
+const secs = Math.max(2, this.props.slideSeconds ?? 5);
+this._slideTimer = setInterval(() => this._goSlide(this._slide() + 1), secs * 1000);
+}
+_slide() {
+return (this.state && this.state.slide) || 0;
+}
+_goSlide(i) {
+this.setState({ slide: ((i % 9) + 9) % 9 });
+}
+renderVals() {
+const strength = this.props.pattern ?? 35;
+const current = this._slide();
+const vals = {
+accent: this.props.accent ?? '#EBB0AA',
+patternOpacity: String(Math.round(strength * 0.24) / 100)
+};
+for (let i = 0; i < 9; i++) {
+const on = current === i;
+vals['op' + i] = on ? '1' : '0';
+vals['pressed' + i] = on ? 'true' : 'false';
+vals['dotW' + i] = on ? '22px' : '8px';
+vals['dotOp' + i] = on ? '1' : '0.55';
+vals['show' + i] = () => { this._goSlide(i); this._startSlides(); };
+}
+const card = this._card();
+for (let i = 0; i < 5; i++) {
+const on = card === i;
+vals['cop' + i] = on ? '1' : '0';
+vals['cpressed' + i] = on ? 'true' : 'false';
+vals['cdotW' + i] = on ? '22px' : '8px';
+vals['cdotOp' + i] = on ? '1' : '0.55';
+vals['cshow' + i] = () => { this._goCard(i); this._startCardSlides(false); };
+}
+const sizes = this._galleries();
+const gal = (this.state && this.state.gal) || {};
+for (const k in sizes) {
+for (let i = 0; i < sizes[k]; i++) {
+const on = (gal[k] || 0) === i;
+vals[k + 'op' + i] = on ? '1' : '0';
+vals[k + 'pressed' + i] = on ? 'true' : 'false';
+vals[k + 'dotW' + i] = on ? '18px' : '7px';
+vals[k + 'dotOp' + i] = on ? '1' : '0.55';
+vals[k + 'show' + i] = () => this._showGallery(k, i);
+}
+vals[k + 'open'] = () => this.setState({ lb: { k: k, i: gal[k] || 0 } });
+}
+const photos = this._galleryPhotos();
+const lb = this.state && this.state.lb;
+vals.lbOpen = !!lb;
+const cur = lb ? photos[lb.k] : null;
+const item = cur ? cur.items[lb.i] : null;
+vals.lbSrc = item ? item.src : '';
+vals.lbAlt = item ? item.alt : '';
+vals.lbCaption = cur ? cur.title : '';
+vals.lbTitle = cur ? cur.title + ' photos' : 'Photos';
+vals.lbCount = cur ? (lb.i + 1) + ' / ' + cur.items.length : '';
+vals.lbClose = () => this.setState({ lb: null });
+vals.lbPrev = () => this._lbStep(-1);
+vals.lbNext = () => this._lbStep(1);
+vals.lbBackdrop = (e) => { if (e && e.target === e.currentTarget) this.setState({ lb: null }); };
+vals.lbKey = (e) => {
+if (!e) return;
+if (e.key === 'Escape') { this.setState({ lb: null }); }
+else if (e.key === 'ArrowLeft') { this._lbStep(-1); }
+else if (e.key === 'ArrowRight') { this._lbStep(1); }
+};
+return vals;
+}
+}
+</script>
+</body>
+</html>
